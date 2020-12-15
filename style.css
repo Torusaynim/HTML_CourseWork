@@ -1,0 +1,152 @@
+body{
+	margin: 120px auto;
+	background-image: url(image/bg.png);
+}
+
+/* Шапка */
+a {
+  color: white;
+}
+.header {
+  background-color: rgba(178,34,34);
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  margin-top: -110px;
+  width: 100%;
+  z-index: 3;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(178,34,34);;
+}
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Verdana;
+  text-decoration: none;
+}
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: rgba(139,0,0);
+}
+.header .logo {
+  display: block;
+  float: left;
+  color: white;
+  font-weight: bold;
+  padding: 0px 20px;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Меню */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* Иконка меню */
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 40px 25px; /*!!!!!!!!!!!!!!!!!!!!!Ширина на мобилках*/
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .nav-icon {
+  background: white;
+  display: block;
+  height: 6px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 38px;
+}
+.header .menu-icon .nav-icon:before,
+.header .menu-icon .nav-icon:after {
+  background: white;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: 0.55s;
+  width: 100%;
+}
+.header .menu-icon .nav-icon:before {
+  top: 14px;
+}
+.header .menu-icon .nav-icon:after {
+  top: -14px;
+}
+
+/* Меню кнопка */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+
+/* В верх страницы */
+.toTop{
+    position: fixed;
+	width: 40px;
+	height: 40px;
+    right: 30px;
+    bottom: 30px;
+    background: rgba(0, 0, 0, 0.4) url(image/arrow_toTop.png) no-repeat;
+	background-position: center, center;
+	box-shadow: 0 0 14px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 3px;
+    display: none;
+}
+.toTop:hover{
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.55);
+	transition-duration: .5s;
+}
+.toTop:active{
+	background-color: rgba(0, 0, 0, 0.7);
+	transition-duration: .1s;
+}
+
+/* Медиа-запросы */
+@media (min-width: 1200px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 33px 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!Размер меню в пк*/
+  }
+  .header li:not(:last-child) a{
+	border-right: 1px solid white;
+  }
+  .header .menu {
+    clear: none;
+    display: flex;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
