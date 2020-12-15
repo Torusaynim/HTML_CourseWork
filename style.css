@@ -82,7 +82,7 @@ a {
   float: left;
   color: white;
   font-weight: bold;
-  padding: 0px 10px;
+  padding: 4px 5px;
   user-select: none;
   text-decoration: none;
 }
@@ -178,7 +178,7 @@ a {
     float: left;
   }
   .header li a {
-    padding: 33px 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!Размер меню в пк*/
+    padding: 34px 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!Размер меню в пк*/
   }
   .header li:not(:last-child) a{
 	border-right: 1px solid white;
