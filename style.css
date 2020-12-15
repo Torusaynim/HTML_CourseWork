@@ -98,7 +98,7 @@ a {
 .header .menu-icon {
   cursor: pointer;
   float: right;
-  padding: 40px 25px; /*!!!!!!!!!!!!!!!!!!!!!Ширина на мобилках*/
+  padding: 40px 25px;
   position: relative;
   user-select: none;
 }
@@ -178,7 +178,7 @@ a {
     float: left;
   }
   .header li a {
-    padding: 34px 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!Размер меню в пк*/
+    padding: 34px 30px;
   }
   .header li:not(:last-child) a{
 	border-right: 1px solid white;
