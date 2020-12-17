@@ -80,11 +80,8 @@ a {
 .header .logo {
   display: block;
   float: left;
-  color: white;
-  font-weight: bold;
   padding: 4px 5px;
   user-select: none;
-  text-decoration: none;
 }
 
 /* Меню */
