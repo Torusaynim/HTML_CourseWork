@@ -16,6 +16,8 @@ body{
 	text-transform: uppercase;
 }
 .container p{
+	font-family: Bookman Old Style;
+	font-size: 14pt;
 	text-align: justify;
 }
 .container img{
@@ -40,10 +42,12 @@ body{
     height: 100%;
 }
 footer{
-	font-style: italic;
+	font-size: 14pt;
+	font-weight: bold;
 	text-align: center;
     padding-bottom: 40px;
-    font: Times New Roman;
+    font: Lucida Console;
+	text-shadow: 2px 2px 3px rgba(101, 105, 108, 0.7);
 }
 
 /* Шапка */
@@ -63,7 +67,7 @@ a {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  background-color: rgba(178,34,34);;
+  background-color: rgba(178,34,34);
 }
 .header li a {
   display: block;
